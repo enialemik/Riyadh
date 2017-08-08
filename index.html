@@ -19,7 +19,7 @@
 
     <!-- Custom Fonts -->
     <link href="/Riyadh/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Karla:400,700|Roboto:300,400,500" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -29,25 +29,41 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 <style>
-
 h1 {
     font-family: 'Roboto', sans-serif;
     font-size:18px;
     font-weight: 300;
 }
+
+.content-section-a {
+  background-color: #FFFFFF !important;
+}
+
 p.lead {
   font-family: 'Roboto', sans-serif;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 100;
+  padding-left: 50px;
 }
 .btn {
   padding: 10px;
-  font-weight: 300;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
 }
 .btn.new {
   border-radius: 0;
   border: 2px solid #000000;
   color: #000000;
+}
+.navbar-custom {
+  background-color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: #5F9EA0;
+  padding-left: 50px;
+  padding-right: 70px;
 }
 .button {
   display: inline-block;
@@ -63,23 +79,12 @@ p.lead {
   cursor: pointer;
   margin: 5px;
 }
-.container-topnav {
-  background-color: #FFFFFF;
-  font-family: 'Karla', sans-serif;
-  font-size: 14px;
-  color:#000000;
-  font-weight: 700;
-  padding-left: 70px;
-  padding-right: 70px;
-}
-
 .button span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
-
 .button span:after {
   content: '»';
   position: absolute;
@@ -104,7 +109,7 @@ p.lead {
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+    <nav class="navbar navbar-fixed-top topnav navbar-custom" role="navigation">
         <div class="container-topnav">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -114,19 +119,19 @@ p.lead {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                                  <a class="navbar-brand topnav" href="/Riyadh"><strong>WOMEN ON THE MOVE</strong></a>
+                                  <a class="navbar navbar-brand topnav navbar-custom" href="/Riyadh"><strong>women on the move</strong></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="/Riyadh/movement.html">MOVEMENT</a>
+                        <a href="/Riyadh/movement.html">movement</a>
                     </li>
                     <li>
-                        <a href="/Riyadh/access.html" target="blank">ACCESS</a>
+                        <a href="/Riyadh/access.html">access</a>
                     </li>
                     <li>
-                        <a href="/Riyadh/about.html" target="blank">ABOUT</a>
+                        <a href="/Riyadh/about.html">about</a>
                     </li>
                 </ul>
             </div>
@@ -158,19 +163,22 @@ p.lead {
                     <br>
                     <br>
                     <br>
-                    <p class="lead">In Saudi Arabia, women are not allowed to drive. Instead they rely on personal drivers and taxis to get around the city. A public transport system could have a tremendous impact on the mobility of women. Riyadh, Saudi Arabia's capital city, is currently building a metro system, scheduled for completion in 2018. This analysis seeks to understand the movements of women in Riyadh, and analyze how the proposed rail system serves the places they travel. To do this, Women on the Move created a sample population of commuters to/from the all-women Princess Noura University. Utilizing anonymized cellphone call detail records, this analysis identifies hotspots – the places women frequent before or after going to the Princess Noura campus, as well as potential paths through the city. Finally, Women on the Move identifies the hotspots in Riyadh that are not served by the proposed rail system.</p>
-                    <h1> Analysis suggests that approximately <strong><a href="/Riyadh/access.html"> 80%</a></strong> of university commuters will not be within 800m walking distance of the new metro.</h1>
+                    <p class="lead">In Saudi Arabia, women are not allowed to drive. Instead they rely on personal drivers and taxis to get around the city. Riyadh, Saudi Arabia's capital city, is currently building a metro system, scheduled for completion in 2018.</p>
+
+                    <p class="lead"><strong>How well does Riyadh's new metro system serve the needs of female travelers?</strong></p>
+
+                    <p class="lead">The analysis usese a sample population of commuters to/from the all-women Princess Noura University. Utilizing anonymized cellphone call detail records, this analysis identifies hotspots – the places women frequent before or after going to the Princess Noura campus, as well as potential paths through the city. Finally, Women on the Move identifies the hotspots in Riyadh that are not served by the proposed rail system.</p>
+
+                    <p class="lead"><strong>Explore the results:</strong></p>
+                     <p class="lead"><a href="/Riyadh/movement.html" align="center" class="btn btn-lg new">Where do university women travel within Riyadh?</a></p>
+                    <p class="lead"><a href="/Riyadh/access.html" align="center" class="btn btn-lg new"> How will the new metro serve those places?</a> </p>
 
                    
 
                 </div>
                 <div class="col-lg-5 col-lg-offset-1 col-sm-6">
-                    <img src="img/logo_final.PNG" width="600">
+                    <img src="img/Riyadh_Flows.GIF" width="600">
                     <br>
-                    <br>
-                     <p><a href="/Riyadh/movement.html" align="center" class="btn btn-lg new">Where do university women travel within Riyadh?</a>  <br>
-                    <br>                          
-                    <a href="/Riyadh/access.html" align="center" class="btn btn-lg new"> How will the new metro serve those places?</a> </p>
                   
                 </div>
             </div>

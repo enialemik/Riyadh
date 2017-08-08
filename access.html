@@ -14,6 +14,7 @@
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
 
 	<!-- Data links -->
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
@@ -21,10 +22,6 @@
     <script src="//d3js.org/d3.v3.min.js"></script>
     
     <style>
-    body {
-      position: absolute;
-      top: 30px;
-    }
      .hotspothover {
             fill: #ffe28a; 
         }
@@ -39,9 +36,48 @@
         stroke: "#5F9EA0"
     }
 
-    h2 {
-        top: 300px;
-    }
+        body {
+            position: absolute;
+            top: 30px;
+            font-family: 'Roboto', sans-serif;
+            /*background-color: #FFFAFA;
+            color: #708090;*/
+        }
+        p {
+              font-family: 'Roboto', sans-serif;
+              font-size: 16px;
+              font-weight: 100;
+              padding-right: 50px;
+        }
+        h1 {
+            font-family: 'Roboto', sans-serif;
+            font-size:25px;
+            font-weight: 300;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        h3 {
+            font-family: 'Roboto', sans-serif;
+/*          position: absolute;
+            left: 20px;*/
+            font-size: 1em;
+            font-weight: 300;
+            /*color: #708090;*/
+        }
+        h2 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1em;
+           /* color: #708090;*/
+        }
+        .navbar-custom {
+          background-color: #FFFFFF;
+          font-family: 'Roboto', sans-serif;
+          font-size: 15px;
+          font-weight: 300;
+          color: #5F9EA0;
+          padding-left: 50px;
+          padding-right: 70px;
+        }
 
 #wrap{
   width:1200px;
@@ -127,8 +163,8 @@ table{
 <body>
 
  <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-        <div class="container topnav">
+    <nav class="navbar navbar-fixed-top topnav navbar-custom" role="navigation">
+        <div class="container-topnav">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -137,19 +173,19 @@ table{
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                    <a class="navbar-brand topnav" href="/Riyadh">WOMEN ON THE MOVE</a>
+                                  <a class="navbar navbar-brand topnav navbar-custom" href="/Riyadh"><strong>women on the move</strong></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="/Riyadh/movement.html">MOVEMENT</a>
+                        <a href="/Riyadh/movement.html">movement</a>
                     </li>
                     <li>
-                        <a href="/Riyadh/access.html">ACCESS</a>
+                        <a href="/Riyadh/access.html">access</a>
                     </li>
                     <li>
-                        <a href="/Riyadh/about.html">ABOUT</a>
+                        <a href="/Riyadh/about.html">about</a>
                     </li>
                 </ul>
             </div>
@@ -158,16 +194,17 @@ table{
         <!-- /.container -->
     </nav>
 
-      <div class="container">
+    <div class="container">
     <br>
     <br>
-    <h1 align="center"><strong>HOW MANY UNIVERSITY WOMEN DOES THE METRO SERVE?</strong></h1>
+    <h1 align="left"><strong>How many university women does the metro serve?</strong></h1>
     <br>
-        </div>
+    </div>
+
     <div class="container">
     <div id="wrap">
-     <h2>Princess Noura University As Origin</h2>
-    <h4> Number of commuters within walking distance of a metro station, per hour</h4>
+     <h3><strong>PRINCESS NOURA UNIVERSITY AS ORIGIN</strong></h3>
+    <p align="left"> Number of commuters within walking distance of a metro station, per hour</p>
     <div id="area1">
     </div>
      <br>
@@ -177,12 +214,12 @@ table{
     <label><input type="radio" name="mode" value="stacked1"> Collapse</label>
     </form>
     </div>
-    <div id="area2">  <h2>Princess Noura University As Destination</h2>
-    <h4> Number of commuters within walking distance of a metro station, per hour</h4></div>
+    <div id="area2">  <h3><strong>PRINCESS NOURA UNIVERSITY AS DESTINATION</strong></h3>
+    <p> Number of commuters within walking distance of a metro station, per hour</p></div>
 </div>
 <div id = tablesum> 
-<h2>Summary of Metro Access Throughout in A Typical Day</h2>
-<h4> Percent of Total Commuters within Walking Distance of a Metro Station</h4>
+<h3><strong>METRO ACCESS IN A TYPICAL DAY: SUMMARY</strong></h3>
+<p> Percent of Total Commuters within Walking Distance of a Metro Station</p>
 <br>
 <table id= summarychart>
   <tr>
@@ -206,17 +243,15 @@ table{
 </table>	
 </div>
     <div id="maptext">
-    <h2 >Mapping Metro Access</h2>
-        <p><h4>This interactive map of Riyadh contains three data layers that aggregate flow (number of women going to/from Princess Noura) for a typical day:
+    <h3><strong>MAPPING METRO ACCESS</strong></h3>
+        <p>This interactive map of Riyadh contains three data layers that aggregate flow (number of women going to/from Princess Noura) for a typical day:
         <br>
         <ul>
         <li>400m Station Buffers: Hover over to see the flow at that station</li>
         <li>800m Station Buffers: Hover over to see the flow at that station</li>
         <li>Flow Grid: Click on the hexagons to see the flow in that area</li>
         </ul> 
-        Toggle layers on and off using the top right "Visible layers" button. </p>
-        </h4>
-        </p>
+        <p>Toggle layers on and off using the top right "Visible layers" button.</p>
         </div>
     <iframe width="100%" height="620" frameborder="0" src="https://cortni.cartodb.com/viz/67aa3566-19f6-11e6-8dd1-0e3ff518bd15/embed_map" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
     </div>
